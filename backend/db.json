@@ -1,0 +1,21 @@
+{
+  "employees": [
+    {
+      "id": "294b",
+      "firstname": "Anubhav",
+      "middlename": "verma",
+      "lastname": "",
+      "dob": "1998-11-10",
+      "email": "anubhav9985@gmail.com",
+      "maritalstatus": "single",
+      "phoneno": "7985246599",
+      "address": {
+        "street": "sahupur",
+        "city": "Sultanpur",
+        "state": "Uttar Pradesh",
+        "country": "India",
+        "zipcode": "228001"
+      }
+    }
+  ]
+}
