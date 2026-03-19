@@ -74,7 +74,7 @@ async function handleDelete(id){
   console.log(id);
 
   try{
-       let resp=await fetch(`https://crud-app-js-j69l.onrender.com/employees/${id}`,{
+       let resp=await fetch(` http://localhost:3000/employees/${id}`,{
         method:"DELETE" },
       );
 
