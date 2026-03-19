@@ -6,7 +6,7 @@ const dobEle = document.getElementById("dob");
 const emailEle = document.getElementById("email");
 const maritalStatusEle = document.getElementById("maritalstatus");
 const phoneNoEle = document.getElementById("phoneno");
-const streetEle = document.getElementById("street");
+const streetEle = document.getElementById("address");
 const cityEle = document.getElementById("city");
 const stateEle = document.getElementById("state");
 const countryEle = document.getElementById("country");
@@ -43,6 +43,9 @@ employeeFormEle.addEventListener("submit", async (e) => {
       body: JSON.stringify(newEmployeeData), // <-- SEND EMP DATA IN JSON-FORMAT
     });
     console.log(resp);
+    if(!resp.ok){
+      throw new Error("Data not saved !")
+    }
 
     // NAVIGATION
     window.location.href = "AllEmployees.html";
